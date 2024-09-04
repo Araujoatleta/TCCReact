@@ -1,5 +1,5 @@
 footer{
-    background-color: antiquewhite;
+    background-color:#000407;
     padding: 10px;
     text-align: center;
 }
@@ -10,4 +10,8 @@ footer{
  
  .menu a {
      color: aqua;
+ }
+ body{
+background-color:#000407;
+
  }

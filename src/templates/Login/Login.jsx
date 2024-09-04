@@ -1,52 +1,47 @@
 import { Link, useNavigate } from "react-router-dom";
-import logo from '../../assets/images/system-logo_128_x_128.png';
 import './Login.css';
-
 const Login = () => {
 
-    const navigate = useNavigate();
 
-    const goto = () => {
-        navigate("/home");
-    }
-
-    const backto = () => {
-        navigate("/");
-    }
 
 
     return (
-        <div className="container">
-            <form action="" className="login-form">
-                <div className="login-logo">
-                    <img src={logo} alt="logo" />
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="email" className="form-label mb-0 fw-bold">Email:</label>
-                    <input type="email" id="email" className="form-control text-center fw-medium shadow" />
-                </div>
-                <div>
-                    <label htmlFor="password" className="form-label mb-0 fw-bold">Senha:</label>
-                    <input type="password" id="password" className="form-control text-center fw-medium shadow" />
-                </div>
-                <div className="d-flex flex-row-reverse mt-1">
-                    <p className="fw-bold fst-italic opacity-75 me-1">Esqueceu a senha?
-                        <Link to={'/forgotpass'}> Clique aqui.</Link>
-                    </p>
-                </div>
-                <div className="d-flex justify-content-center my-1 d-none" id="infos">
-                    <p className="fw-bold fst-italic text-danger">
-                        Dados Incorretos!!!
-                    </p>
-                </div>
-                <div className="d-flex justify-content-around mb-3 mt-2">
-                    <button className="btn btn-warning fw-medium shadow" type="button"
-                        onClick={backto}>Cancelar</button>
-                    <button className="btn btn-success fw-medium shadow" type="submit"
-                        onClick={goto} >Entrar</button>
-                </div>
-            </form>
+        <div class="wrapper">
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required/>
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required/>
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label>
+                <input type="checkbox"/> Remember me
+              </label>
+              <label>
+                <a href="../Senha/index.html">Forgot password?</a>
+              </label>
+            </div>
+            <Link to={'/home'}
+          className='btn btn-sm btn-warning'>
+          Acesso Restrito
+        </Link>
+            <div class="register">
+              <p>Don't have a account ?  <Link to={'/cadastro'}>Register</Link></p>
+            </div>
+          </form>
         </div>
+      </div>
+    </section>
+  </div>
     )
 }
 
