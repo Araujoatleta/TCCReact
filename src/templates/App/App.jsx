@@ -82,7 +82,7 @@ function App() {
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script src="./Carrosel/main.js"></script>
+  
     <section class="s-villain">
       <div class="container">
         <img src="img/imagem_background.svg" alt=""/>
