@@ -15,7 +15,7 @@ function App() {
             <a href="#" class="btn mobile">Comprar</a>
       </div>
     </header>
-    <section class="s-hero">
+      <section class="s-hero">
       <div class="container">
         <div class="left-area">
           <h1>BARBA DO MÊS</h1>
@@ -24,70 +24,75 @@ function App() {
           <div class="value">
             <h3>Clique Abaixo</h3>
             <div class="btns">
-              <a href="#" class="btn">Abaixa o nosso APP</a>
+              <a href="#" class="btn">Instale o nosso APP</a>
             </div>
           </div>
+</div>
           </div>
-        </div>
-    </section>
-    <section>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--one">
-            <div>
-              <h2>Enjoy the exotic of sunny Hawaii</h2>
-              <p>
-               
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide--two">
-            <div>
-              <h2>The Island of Eternal Spring</h2>
-              <p>
-               
-              </p>
-            </div>
-          </div>
-    
-          <div class="swiper-slide swiper-slide--three">
-            <div>
-              <h2>Awesome Eiffel Tower</h2>
-              <p>
-               
-              </p>
-            </div>
-          </div>
-    
-          <div class="swiper-slide swiper-slide--four">
-            <div>
-              <h2>One of the safest states in Mexico</h2>
-              <p>
-                
-              </p>
-            </div>
-          </div>
-    
-          <div class="swiper-slide swiper-slide--five">
-            <div>
-              <h2>The most popular yachting destination</h2>
-              <p>
-    
+          </section>
 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-  
     <section class="s-villain">
       <div class="container">
-        <img src="img/imagem_background.svg" alt=""/>
       </div>
     </section>
+
+    <section class="pricing-section">
+     <h1 class="h1-last">GARANTA O SEU !!!<br/>
+      ESCOLHA O QUE MAIS TE <br/> ATENDE e se identifica.</h1>
+
+      <div class="plans-container">
+          <div class="plan plan-bronze">
+            <p class="slogan-secundario">Edição First
+            </p>  
+            <h2>PLAN BRONZE</h2>
+              <ul>
+                  <li>Cortes ilimitados</li>
+                  <li>1 Penteado</li>
+              </ul>
+              <p class="price">R$ 89,90</p>
+              <button>Comprar</button>
+          </div>
+
+          <div class="plan plan-silver">
+             <p class="slogan-principal">Edição Premium
+             </p>
+            <h2>PLAN SILVER</h2>
+              <ul>
+                  <li>Luzes</li>
+                  <li>Limpeza de pele</li>
+                  <li>Barboterapia</li>
+                  <li>Prioridade no atendimento</li>
+                  <li>Sombrancelha</li>
+                  <li>Corte ilimitado</li>
+                  <li>Nutrição capilar</li>
+                  <li>Hidratação</li>
+              </ul>
+              <p class="price">R$ 149,90</p>
+              <button>Comprar</button>
+          </div>
+
+          <div class="plan plan-deluxe" placeholder="Eduardo">
+            <p class="slogan-terciario">Edição Deluxy</p>
+            <h2>PLAN DELUXE</h2>
+              <ul>
+                  <li>Luzes</li>
+                  <li>Limpeza de pele</li>
+                  <li>Barboterapia</li>
+                  <li>Prioridade no atendimento</li>
+                  <li>Sombrancelha</li>
+                  <li>Corte ilimitado</li>
+                  <li>Nutrição capilar</li>
+                  <li>Hidratação</li>
+                  <li>Visagismo/Barbearias especiais</li>
+                  <li>2 por 1: Leve um acompanhante uma vez por mês de graça!</li>
+                  <li>Cortes ilimitados</li>
+              </ul>
+              <p class="price">R$ 399,50</p>
+              <button>Comprar</button>
+          </div>
+      </div>
+  </section>
+
     <footer>
       <div class="container">
         <div class="left-area">
@@ -96,6 +101,7 @@ function App() {
              clientes podem desfrutar de uma experiência mais eficiente 
              e satisfatória no mundo dos serviços de corte de cabelo e barbearia.</p>
         </div>
+        
         <div class="right-area">
           <a href="https://designboost.com.br/" target="_blank">
             <img src="img/1.svg" alt=""/>
@@ -103,8 +109,7 @@ function App() {
         </div>
       </div>
     </footer>
-</>
- )
-}
-
-export default App
+    </>
+      )
+      }
+export default App;

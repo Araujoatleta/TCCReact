@@ -43,7 +43,6 @@ const ImageUploader = ({setFile}) => {
                 </div>
             )}
         </div>
-    );
-};
+ C
 
 export default ImageUploader;
